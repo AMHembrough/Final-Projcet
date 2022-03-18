@@ -1,6 +1,6 @@
 # Presentation
 
-## Selected topic 
+### Selected topic 
 
 Increased urbanization results in increased energy use.  Crude oil has historically been used for energy production, though renewable energy alternatives also exist.  International, federal and state-wide mandates and regulations, such as the Renewable Fuel Standards (RFS) and the Low Carbon Fuel Standards (LCFS) require renewable fuel production volume obligations to be met annually.  This type of govt regulation is one of many factors that could impact crude oil pricing, especially in the next 5-10 years as renewable diesel production, electric vehicles, and other alternative energy sources become more popular here in the United States and abroad.  Expensive and/or volatile crude oil pricing (due to alternative fuel mandates, political turmoil like that in Russia & Ukraine today, etc.) could push consumers to utilize alternative fuels more quickly.  Alternative fuels, in turn, could have a less harmful, negative anthropological effects on our environment.   
 
@@ -8,27 +8,27 @@ The outcome of this project is to forecast crude oil pricing using a time series
 
 Next steps (likely after completion of this course) would be to integrate other variables into time forecasting of oil prices, such as RIN pricing, sustainability indices, etc.  This can be achieved through a similiar forecasting model called Vector Augoregression, or VAR.  While both models are autoregressing forecasting models, VAR is different than ARIMA becuase it forecasts more than 1 target variable (and assumes the target varaibles are related).  
 
-## Reason why we selected this topic 
+### Reason why we selected this topic 
 
 We are interested in learning about the relationship between crude oil, alternative fuels, and factors that impact their demand and pricing.  This topic is ever important, especially now, given Ukraine and Russia turmoil which has resulted in significantly higher and more volatile crude oil pricing.  Will anticiapte a shift towards renewable fuel sources more quickly, which will have less negative anthropological effects than consumption of crude oil.  
 
-## Description of source of data 
+### Description of source of data 
 
 Crude oil price which was obtained through Kaggle. The csv file contains crude oil daily pricing in USD from 2/3/2011 through 12/31/2019.  There are 2198 rows of data, including the header row.  
 
 We also explored other variables in our ARIMA model such as sustainability index, RIN pricing, etc.  The sustainability data was also derived from Kaggle, while the RIN data was derived from the EPA.  
 
-## Questions they hope to answer with the data 
+### Questions they hope to answer with the data 
 
 We want to learn how to conduct time series analysis with “out-of-sample” forecasting via machine learning, specifically ARIMA.  We will project crude oil pricing.   
 
 Time permitting, we are also interestd in completing a VAR analysis.  
 
-## Description of the data exploration phase of the project 
+### Description of the data exploration phase of the project 
 
 Please see below for details on the data exploration phase of project.  
 
-## Description of the analysis phase of the project 
+### Description of the analysis phase of the project 
 
 We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  
 
@@ -40,7 +40,7 @@ SMAPE was also calculated to determine model accuracy.  The Symmetric Mean Absol
 
 # GitHub
 
-## All code necessary to perform exploratory analysis 
+### All code necessary to perform exploratory analysis 
 
 We have utilized 3 jupyter notebooks during the exploratory portion of the class.  
 
@@ -50,17 +50,17 @@ A second jupyter notebook was used when building the machine learning portion of
 
 A third jupyter notebook was used to create our ARIMA model which is the model we will be submitting.  This code for this model has been uploaded to the main branch of the github repository.  
 
-## Some code necessary to complete the machine learning portion of the project 
+### Some code necessary to complete the machine learning portion of the project 
 
 Code can be found in Jupyter notebook.  
 
-##  Description of the communication protocols 
+###  Description of the communication protocols 
 
 We did not meet outside of class during the weeks of 7-Mar.  There are plans for the group to meet this Saturday, 19-March.  
 
 There was some communication on via Slack, both within the channel and DM’s within group.  
 
-## Outline of the project 
+### Outline of the project 
 -	Find dataset (source : Kaggle)
 -	Clean dataset using python, pandas
 -	Create database using postgres
@@ -73,7 +73,7 @@ There was some communication on via Slack, both within the channel and DM’s wi
 
 All code in the main branch is production ready.
 
-## Description of preliminary data preprocessing 
+### Description of preliminary data preprocessing 
 
 We practiced a lot of data preprocessing in the first two weeks of the final project.  While we will not use the dataframes we created during this process, it was a great way to refine and showcase some of the data cleaning processes we learned during our 24-week bootcamp.  Specifically, we did the following data processing in our initial jupyter notebook (which was submitted with the first deliverable).
 -	Import data into a dataframe
@@ -89,17 +89,17 @@ The crude oil price dataset was relatively clean and required little preprocessi
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
-## Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
 
 ARIMA utilizes a single variable for time series forecasting.  The variable that we used was crude oil price. 
 
-## Description of how data was split into training and testing sets 
+### Description of how data was split into training and testing sets 
 
 We split our data into training and testing sets by 80 and 20 percent, respectively.  This results in 1743 training samples and 436 testing samples.  We experimented with other splits, notably 90-10 but found the model to be more accurate when using a n 80-20 split.   
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
-## Explanation of model choice, including limitations and benefits
+### Explanation of model choice, including limitations and benefits
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Originally, we thought to explore the data using linear regression or multivariate regression, but decided to dive deeper.  
 
@@ -115,13 +115,13 @@ Through discussions with several TAs and our course instructor, we learned of a 
 
 # Database
 
-## Database stores static data for use during the project 
+### Database stores static data for use during the project 
 
 Postgres SQL, or Postgres, is the relational database system that we used for our final project.  In conjunction with Postgres, we also used pgAdmin to write and execute queries, and to view our results.  
 
-## Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
+### Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
 
-## Includes at least two tables (or collections, if using MongoDB) 
+### Includes at least two tables (or collections, if using MongoDB) 
 
 We imported two datasets into Postgres SQL using pdAdmin, one which stores daily pricing for crude oil, and a second which stores daily pricing for renewable fuel D-codes D3, D4, D5, and D6.  
 
@@ -129,13 +129,13 @@ We imported two datasets into Postgres SQL using pdAdmin, one which stores daily
 
 ![Postgres RIN Price Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20table2.PNG)
 
-## Includes at least one join using the database language (not including any joins in Pandas) 
+### Includes at least one join using the database language (not including any joins in Pandas) 
 
 We joined our crude oil pricing data table with our RIN D-type pricing table.  Our output was a table showing crude pricing, alongside prices for D3, D4, D5 and D6 RIN prices.  
 
 ![Postgres Join](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20join.PNG)
 
-## Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD with relationships.
+### Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD with relationships.
 
 ![Entity Relationship Diagram](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Entity%20relationship%20diagram.PNG)
 
@@ -143,16 +143,16 @@ We joined our crude oil pricing data table with our RIN D-type pricing table.  O
 
 A blueprint for the dashboard is created and includes all of the following:
 
-## Storyboard on Google Slide(s) 
+### Storyboard on Google Slide(s) 
 
 These slides will need updated since we have changed the scope of our project to accommodate a model that is better suited for time series forecasting, specifically ARIMA modeling.  
 
 https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
 
-## Description of the tool(s) that will be used to create final dashboard 
+### Description of the tool(s) that will be used to create final dashboard 
 
 We plan to utilize Tableau to create our final Dashboard. 
 
-## Description of interactive element(s)
+### Description of interactive element(s)
 
 We plan to make visuals that you can interact with inside Tableau (ie tooltips, etc).  This will be a nice feature to offer to our end users.  
