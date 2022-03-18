@@ -1,32 +1,32 @@
 # Presentation
 
-The presentation outlines the project, including the following:
-
 ## Selected topic 
 
 Increased urbanization results in increased energy use.  Crude oil has historically been used for energy production, though renewable energy alternatives also exist.  International, federal and state-wide mandates and regulations, such as the Renewable Fuel Standards (RFS) and the Low Carbon Fuel Standards (LCFS) require renewable fuel production volume obligations to be met annually.  This type of govt regulation is one of many factors that could impact crude oil pricing, especially in the next 5-10 years as renewable diesel production, electric vehicles, and other alternative energy sources become more popular here in the United States and abroad.  Expensive and/or volatile crude oil pricing (due to alternative fuel mandates, political turmoil like that in Russia & Ukraine today, etc.) could push consumers to utilize alternative fuels more quickly.  Alternative fuels, in turn, could have a less harmful, negative anthropological effects on our environment.   
 
 The outcome of this project is to forecast crude oil pricing using a time series forecasting machine learning model called ARIMA. 
 
+Next steps (likely after completion of this course) would be to integrate other variables into time forecasting of oil prices, such as RIN pricing, sustainability indices, etc.  This can be achieved through a similiar forecasting model called Vector Augoregression, or VAR.  While both models are autoregressing forecasting models, VAR is different than ARIMA becuase it forecasts more than 1 target variable (and assumes the target varaibles are related).  
+
 ## Reason why we selected this topic 
 
-We are interested in learning about the relationship between crude oil, alternative fuels, and factors that impact their demand and pricing.  This is ever important, especially now, given Ukraine and Russia turmoil which has resulted in significantly higher and more volatile crude oil pricing.  Will we see a shift towards renewable fuel sources more quickly?  Crude oil price forecasting may shed some light!
+We are interested in learning about the relationship between crude oil, alternative fuels, and factors that impact their demand and pricing.  This topic is ever important, especially now, given Ukraine and Russia turmoil which has resulted in significantly higher and more volatile crude oil pricing.  Will anticiapte a shift towards renewable fuel sources more quickly, which will have less negative anthropological effects than consumption of crude oil.  
 
 ## Description of source of data 
 
-Crude oil price which was obtained through Kaggle. 
+Crude oil price which was obtained through Kaggle. The csv file contains crude oil daily pricing in USD from 2/3/2011 through 12/31/2019.  There are 2198 rows of data, including the header row.  
 
-The csv file contains crude oil daily pricing in USD from 2/3/2011 through 12/31/2019.  There are 2198 rows of data, including the header row.  
+We also explored other variables in our ARIMA model such as sustainability index, RIN pricing, etc.  The sustainability data was also derived from Kaggle, while the RIN data was derived from the EPA.  
 
 ## Questions they hope to answer with the data 
 
-We want to learn how to conduct time series analysis with “out-of-sample” forecasting via machine learning, specifically ARIMA.  
+We want to learn how to conduct time series analysis with “out-of-sample” forecasting via machine learning, specifically ARIMA.  We will project crude oil pricing.   
 
-Time permitting, I am also interested in learning VAR over the next two weeks which would allow me to forecast several related variables in time.  
+Time permitting, we are also interestd in completing a VAR analysis.  
 
 ## Description of the data exploration phase of the project 
 
-Given that I am interested in learning ARIMA, I will be exploring a single variable.  
+Please see below for details on the data exploration phase of project.  
 
 ## Description of the analysis phase of the project 
 
@@ -34,7 +34,7 @@ We used two metrics to assess the quality of the ARIMA model, specifically MSE a
 
 Mean squared error measures the difference between the predicted values and the actual values.  The lesser the MSE, the closer the fit.  In our model, the MSE is 6.58e-06.  
 
-SMAPE was also calculated to determine model accuracy.  The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors.  Like MSE, the lower the value of SMAPE, the higher the model accuracy.  Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models.  In our model, the SMAPE is 2.77%. 
+SMAPE was also calculated to determine model accuracy.  The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors.  Like MSE, the lower the value of SMAPE, the higher the model accuracy.  Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models.  In our model, the SMAPE is 2.77%.  It will be fun to compare SMAPE between this ARIMA model, and a later VAR model. 
 
 ![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Model%20Accuracy.PNG)
 
@@ -114,8 +114,6 @@ The RERF model we created to project energy demands using independent variables 
 Through discussions with several TAs and our course instructor, we learned of a more appropriate model for time series forecasting called ARIMA.  ARIMA is an acronym that stands for AutoRegressive Integrated Moving Average.  This type of modeling utilizes a relationship between a single observation in time and X number of lagged observations. This is an ideal model for “out-of-sample” forecasting. 
 
 # Database
-
-Team members submit the code for their machine learning model, as well as the following:
 
 ## Database stores static data for use during the project 
 
