@@ -149,7 +149,10 @@ https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkj
 
 ### Description of the tool(s) that will be used to create final dashboard 
 
-We plan to utilize Tableau to create our final Dashboard. 
+We plan to utilize Tableau to create our final Dashboard. Here are some mockups of our visualizations : 
+
+![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20crude.PNG)
+![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20RIN.PNG)
 
 ### Description of interactive element(s)
 
