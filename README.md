@@ -155,9 +155,9 @@ https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkj
 
 We are utilizing Tableau to create visuals for our final project.  Here are examples of some of the visuals we plan to deliver.  
 
-![Tableau RIN] https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20RIN.PNG)
+![Tableau RIN](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20RIN.PNG)
 
-![Tableau Crude] (https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20crude.PNG)
+![Tableau Crude](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20crude.PNG)
 
 ## Description of interactive element(s)
 
