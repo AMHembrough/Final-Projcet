@@ -94,7 +94,7 @@ One limitation of ARIMA modeling, which we’ve mentioned already, is that it on
 
 ### All code necessary to perform exploratory analysis 
 
-We  utilized 3 Jupyter notebooks during the exploratory portion of the class.  
+We  utilized 3 Jupyter notebooks during the exploratory portion of the project :
 - The first notebook utilized python and pandas for data exploration of our initial urbanization dataset.  This was included in our first deliverable, and showcases how to import data into a dataframe, clean the data by dropping unnecessary columns, join dataframes, transpose dataframes, edit the index, edit the header row, do basic plotting to understand relationships between variables, and more.  
 - A second Jupyter notebook was used when building the machine learning portion of the project, specifically regression-enhanced random forest.  Because we chose to not use this model, this Jupyter notebook was not added to the main branch of the GitHub repository.  
 - A third Jupyter notebook was used to create our ARIMA model which is the model we will be submitting for our final deliverable.  This code for this model has been uploaded to the main branch of the GitHub repository.  
