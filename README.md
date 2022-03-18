@@ -97,7 +97,7 @@ One limitation of ARIMA modeling, which we’ve mentioned already, is that it on
 We  utilized 3 Jupyter notebooks during the exploratory portion of the project :
 - The first notebook utilized python and pandas for data exploration of our initial urbanization dataset.  This was included in our first deliverable, and showcases how to import data into a dataframe, clean the data by dropping unnecessary columns, join dataframes, transpose dataframes, edit the index, edit the header row, do basic plotting to understand relationships between variables, and more.  
 - A second Jupyter notebook was used when building the machine learning portion of the project, specifically regression-enhanced random forest.  Because we chose to not use this model, this Jupyter notebook was not added to the main branch of the GitHub repository.  
-- A third Jupyter notebook was used to create our ARIMA model which is the model we will be submitting for our final deliverable.  This code for this model has been uploaded to the main branch of the GitHub repository.  
+- A third Jupyter notebook was used to create our ARIMA model which is the model we will be submitting for our final deliverable.  The code for this model has been uploaded to the main branch of the GitHub repository.  
 
 ### Some code necessary to complete the machine learning portion of the project 
 
@@ -105,18 +105,20 @@ Please refer to our Jupyter notebook which has been uploaded to Github.
 
 ### Description of the communication protocols 
 
-We did not meet outside of class during the weeks of 7-Mar.  There are plans for the group to meet this Saturday, 19-March.  
+We did not meet outside of class during the week of 7-Mar.  There are plans for the group to meet this Saturday, 19-March.  
 
 There was some communication on via Slack, both within the channel and DM’s within group.  
 
 ### Outline of the project 
--	Find dataset (source : Kaggle)
--	Clean dataset using python, pandas
--	Create database using postgres
--	Build model for “in-sample” forecasting
--	Evaluate model accuracy
--	Run model for “out-of sample” forecasting
+-	Identify project idea
+-	Find dataset using Kaggle
+-	Clean dataset using python & pandas
+-	Create database using postgres SQL and pdAdmin
+-	Build model for “in-sample” forecasting using Jupyter notebooks & python
+-	Evaluate model accuracy using statistical anlysis tools in python
+-	Run model for “out-of sample” forecasting using Jupyter notebooks & python
 -	Build dashboard using Tableau
+-	Finalize presentation using Google slides
 
 # Database
 
