@@ -2,9 +2,7 @@
 
 ### Selected topic 
 
-Increased urbanization results in increased energy use.  
-
-Crude oil has historically been used for energy production, though renewable energy alternatives also exist.  International, federal, and state-wide mandates and regulations, such as the Renewable Fuel Standards (RFS) and the Low Carbon Fuel Standards (LCFS) require renewable fuel production volume obligations to be met annually.  This type of govt regulation is one of many factors that could impact crude oil pricing, especially in the next 5-10 years as renewable diesel production, electric vehicles, and other alternative energy sources become more popular here in the United States and abroad.  Expensive and/or volatile crude oil pricing (due to alternative fuel mandates, political turmoil like that in Russia & Ukraine today, etc.) could push consumers to utilize alternative fuels more quickly.  Alternative fuels, in turn, could have a less harmful, negative anthropological effects on our environment.   
+Increased urbanization results in increased energy use.  Crude oil has historically been used for energy production, though renewable energy alternatives also exist.  International, federal, and state-wide mandates and regulations, such as the Renewable Fuel Standards (RFS) and the Low Carbon Fuel Standards (LCFS) require renewable fuel production volume obligations to be met annually.  This type of govt regulation is one of many factors that could impact crude oil pricing, especially in the next 5-10 years as renewable diesel production, electric vehicles, and other alternative energy sources become more popular here in the United States and abroad.  Expensive and/or volatile crude oil pricing (due to alternative fuel mandates, political turmoil like that in Russia & Ukraine today, etc.) could push consumers to utilize alternative fuels more quickly.  Alternative fuels, in turn, could have a less harmful, negative anthropological effects on our environment.   
 
 The outcome of this project is to forecast crude oil pricing using a time series forecasting machine learning model called ARIMA. 
 
