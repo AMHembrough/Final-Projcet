@@ -1,6 +1,6 @@
 # Presentation
 
-## Selected topic 
+### Selected topic 
 
 Increased urbanization results in increased energy use.  
 
@@ -8,26 +8,26 @@ Crude oil has historically been used for energy production, though renewable ene
 
 The outcome of this project is to forecast crude oil pricing using a time series forecasting machine learning model called ARIMA. 
 
-## Reason why we selected this topic 
+### Reason why we selected this topic 
 
 We are interested in learning about the relationship between crude oil, alternative fuels, and factors that impact their demand and pricing.  This is ever important, especially now, given Ukraine and Russia turmoil which has resulted in significantly higher and more volatile crude oil pricing.  Will we see a shift towards renewable fuel sources more quickly?  Crude oil price forecasting may shed some light!
 
-## Description of source data 
+### Description of source data 
 
 Crude oil price which was obtained through Kaggle. The csv file contains crude oil daily pricing in USD from 2/3/2011 through 12/31/2019.  There are 2198 rows of data, including the header row.  
 We also explored other variables with our ARIMA model such as sustainability index, RIN pricing, etc.  The sustainability data was derived from Kaggle, while the RIN pricing data were derived from the Environmental Protection Agency, or EPA.  
 
-## Questions they hope to answer with the data 
+### Questions they hope to answer with the data 
 
 We want to learn how to conduct time series analysis with “out-of-sample” forecasting via machine learning, specifically ARIMA.  
 Time permitting, I am also interested in learning VAR over the next two weeks which would allow me to forecast several related variables in time.  
 
-## Description of the data exploration phase of the project 
+### Description of the data exploration phase of the project 
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Through the data exploration phase of the project, we learned that our datasets contained too few rows.  
 Within the last week, we began looking for a new dataset that would satisfying our row needs.  While we could not find the same metrics as our original dataset, we did find a related dataset containing daily crude oil pricing.  
 
-## Description of the analysis phase of the project 
+### Description of the analysis phase of the project 
 
 The analysis phase of the project helped us understand the strengths and weakness of several machine learning models.  During this process, we explored a number of supervised machine learning models including, regression analysis, random forests, regression-enhanced random forests, and autoregressive integrated moving average (ARIMA).  We hope to find time to explore vector autoregression (VAR).  
 
@@ -39,7 +39,7 @@ The model we are presenting as our final project is the ARIMA model.  We used tw
 
 # Machine Learning Model
 
-## Description of preliminary data preprocessing 
+### Description of preliminary data preprocessing 
 
 We practiced a lot of data preprocessing in the first two weeks of the final project using the EPA and World bank urbanization data.  While our end product will not utilize the dataframes we collected during this stage of data exploration, it was a great way to refine and showcase some of the data cleaning processes we learned during our 24-week bootcamp.  
 
@@ -57,17 +57,17 @@ The crude oil price dataset was relatively clean and required little preprocessi
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
-## Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
 
 The ARIMA model uses the dependency between an observation and the residual error from the moving average.  The variable we used was crude oil pricing.  
 
-## Description of how data was split into training and testing sets 
+### Description of how data was split into training and testing sets 
 
 We split our data into training and testing sets by 90 and 10 percent, respectively.  This results in 1961 training samples and 218 testing samples.  We experimented with other splits, notably 80-20 but used 90-10 in the end.  
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
-## Explanation of model choice, including limitations and benefits
+### Explanation of model choice, including limitations and benefits
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Originally, we thought to explore the data using linear regression or multivariate regression, but decided to dive deeper.  
 
@@ -84,14 +84,13 @@ Through discussions with several TAs and our course instructor, we learned of a 
 There are three parameters of ARIMA, specifically (p,d,q).  **P** refers to the lag order, or the number of lag observations included in the model. **D** refers to the degree of differencing, or the number of times the raw observations are differenced.   **Q** refers to the order of the moving average, or the size of the moving average window.  Each of these parameters are substituted with integers to indicate the type of ARMMA model being used.  If a zero is substituted for a parameter, that element will not be used in the ARIMA model.  
 
 When we fit the ARIMA model to our crude oil dataset, we learned that our data was best fit to ARIMA (0,1,0) which had the smallest AIC value compared to other fits.  
-
 ![ARIMA fit]( https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/ARIMA%20fit.PNG)
 
 One limitation of ARIMA modeling, which we’ve mentioned already, is that it only utilizes a single variable.  For this reason, it’s worth noting that the VAR model doesn’t have this limitation, which is why we are eager to try this model out, too! 
 
 # GitHub
 
-## All code necessary to perform exploratory analysis 
+### All code necessary to perform exploratory analysis 
 
 We have utilized 3 Jupyter notebooks during the exploratory portion of the class.  
 The first notebook utilized python and pandas for data exploration of our initial urbanization dataset.  This was included in our first deliverable, and showcases how to import data into a dataframe, clean the data by dropping unnecessary columns, join dataframes, transpose dataframes, edit the index, edit the header row, do basic plotting to understand relationships between variables, and more.  
@@ -100,17 +99,17 @@ A second Jupyter notebook was used when building the machine learning portion of
 
 A third Jupyter notebook was used to create our ARIMA model which is the model we will be submitting for our final deliverable.  This code for this model has been uploaded to the main branch of the GitHub repository.  
 
-## Some code necessary to complete the machine learning portion of the project 
+### Some code necessary to complete the machine learning portion of the project 
 
 Please refer to our Jupyter notebook which has been uploaded to Github.
 
-## Description of the communication protocols 
+### Description of the communication protocols 
 
 We did not meet outside of class during the weeks of 7-Mar.  There are plans for the group to meet this Saturday, 19-March.  
 
 There was some communication on via Slack, both within the channel and DM’s within group.  
 
-## Outline of the project 
+### Outline of the project 
 -	Find dataset (source : Kaggle)
 -	Clean dataset using python, pandas
 -	Create database using postgres
@@ -121,11 +120,11 @@ There was some communication on via Slack, both within the channel and DM’s wi
 
 # Database
 
-## Database stores static data for use during the project 
+### Database stores static data for use during the project 
 
 Postgres SQL, or Postgres, is the relational database system that we used for our final project.  In conjunction with Postgres, we also used pgAdmin to write and execute queries, and to view our results.  
 
-## Includes at least two tables (or collections, if using MongoDB) 
+### Includes at least two tables (or collections, if using MongoDB) 
 
 We created two tables in Postgres SQL using pdAdmin.   The first table stores daily pricing for crude oil, and the seconds table stores daily pricing for renewable fuel D-codes D3, D4, D5, and D6.  
 
@@ -133,13 +132,13 @@ We created two tables in Postgres SQL using pdAdmin.   The first table stores da
 
 ![Postgres RIN Price Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20table2.PNG)
 
-## Includes at least one join using the database language (not including any joins in Pandas) 
+### Includes at least one join using the database language (not including any joins in Pandas) 
 
 We joined our crude oil pricing data table with our RIN D-type pricing table.  Our output was a table showing crude pricing, alongside prices for D3, D4, D5 and D6 RIN prices.  
 
 ![Postgres Join](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20join.PNG)
 
-## Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD with relationships.
+### Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD with relationships.
 
 Please see the entity relationship diagram for our SQL database below.  
 
@@ -147,13 +146,13 @@ Please see the entity relationship diagram for our SQL database below.
 
 # Dashboard
 
-## Storyboard on Google Slide(s) 
+### Storyboard on Google Slide(s) 
 
 Here is a link to our storyboard on Google Slides: 
 
 https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
 
-## Description of the tool(s) that will be used to create final dashboard 
+### Description of the tool(s) that will be used to create final dashboard 
 
 We are utilizing Tableau to create visuals for our final project.  Here are examples of some of the visuals we plan to deliver.  
 
@@ -161,6 +160,6 @@ We are utilizing Tableau to create visuals for our final project.  Here are exam
 
 ![Tableau Crude](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20crude.PNG)
 
-## Description of interactive element(s)
+### Description of interactive element(s)
 
 We plan to make visuals that you can interact with inside Tableau (ie tooltips, etc).  This will be a nice feature to offer to our end users.  
