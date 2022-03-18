@@ -123,6 +123,8 @@ Postgres SQL, or Postgres, is the relational database system that we used for ou
 
 ### Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
 
+We will use the output from our table joins in Postgres SQL to input into our ARIMA model in Jupyter notebook.  
+
 ### Includes at least two tables (or collections, if using MongoDB) 
 
 We imported two datasets into Postgres SQL using pdAdmin, one which stores daily pricing for crude oil, and a second which stores daily pricing for renewable fuel D-codes D3, D4, D5, and D6.  
