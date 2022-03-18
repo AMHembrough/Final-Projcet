@@ -54,7 +54,7 @@ A third jupyter notebook was used to create our ARIMA model which is the model w
 
 Code can be found in Jupyter notebook.  
 
-###  Description of the communication protocols 
+###  Description of the communication protocols  
 
 We did not meet outside of class during the weeks of 7-Mar.  There are plans for the group to meet this Saturday, 19-March.  
 
