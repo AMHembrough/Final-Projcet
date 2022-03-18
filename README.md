@@ -8,7 +8,7 @@ The outcome of this project is to forecast crude oil pricing using a time series
 
 ### Reason why we selected this topic 
 
-We are interested in learning about the relationship between crude oil, alternative fuels, and factors that impact their demand and pricing.  This is ever important, especially now, given Ukraine and Russia turmoil which has resulted in significantly higher and more volatile crude oil pricing.  We anticipate a shift towards renewable fuel sources more quickly which could have less negative anthropological effects than consumption of crude oil 
+We are interested in learning about the relationship between crude oil, alternative fuels, and factors that impact their demand and pricing.  This is ever important, especially now, given Ukraine and Russia turmoil which has resulted in significantly higher and more volatile crude oil pricing.  We anticipate a shift towards renewable fuel sources more quickly, which could have fewer negative anthropological effects on the environment than the consumption of crude oil.
 
 ### Description of source data 
 
