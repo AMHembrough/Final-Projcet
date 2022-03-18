@@ -34,7 +34,7 @@ Mean squared error measures the difference between the predicted values and the 
 
 SMAPE was also calculated to determine model accuracy. The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors. Like MSE, the lower the value of SMAPE, the higher the model accuracy. Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models. In our model, the SMAPE is 1.50%. It will be fun to compare SMAPE between this ARIMA model, and a later VAR model.
 
-![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Model%20Accuracy.PNG)
+![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Accuracy.PNG)
 
 # GitHub
 
