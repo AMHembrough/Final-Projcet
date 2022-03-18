@@ -13,7 +13,8 @@ We are interested in learning about the relationship between crude oil, alternat
 ### Description of source data 
 
 Crude oil price which was obtained through Kaggle. The csv file contains crude oil daily pricing in USD from 2/3/2011 through 12/31/2019.  There are 2198 rows of data, including the header row.  
-We also explored other variables with our ARIMA model such as sustainability index, RIN pricing, etc.  The sustainability data was derived from Kaggle, while the RIN pricing data were derived from the Environmental Protection Agency, or EPA.  
+
+We also explored other variables with our ARIMA model such as sustainability index and pricing of various RIN d-codes, specifically D3, D4, D5 and D6.  The sustainability data was derived from Kaggle, while the RIN pricing data were derived from the Environmental Protection Agency, or EPA.  
 
 ### Questions they hope to answer with the data 
 
