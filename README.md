@@ -83,17 +83,17 @@ We practiced a lot of data preprocessing in the first two weeks of the final pro
 -	Plot data to understand relationship between variables
 -	….and so much more.  
 
-The crude oil price dataset was relatively clean and required little preprocessing.  I experimented with ARIMA using other datasets that did not provide daily values, but instead offered weekly or monthly values.  To make these datasets align well in a pandas dataframe, I did an “interpolation” using pandas which allowed me to forward and backward fill the missing data points.   Below is a screenshot of that code. 
+The crude oil price dataset was relatively clean and required little preprocessing.  We experimented with ARIMA using other datasets that did not provide daily values, but instead offered weekly or monthly values.  To make these datasets align well in a pandas dataframe, we did an “interpolation” using pandas which allowed us to forward and backward fill the missing data points.   Below is a screenshot of that code. 
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
 ### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
 
-ARIMA utilizes a single variable for time series forecasting.  The variable that we used was crude oil price. 
+ARIMA utilizes a single variable for autoregressing time series forecasting.  The variable that we used was crude oil price. 
 
 ### Description of how data was split into training and testing sets 
 
-We split our data into training and testing sets by 80 and 20 percent, respectively.  This results in 1743 training samples and 436 testing samples.  We experimented with other splits, notably 90-10 but found the model to be more accurate when using a n 80-20 split.   
+We split our data into training and testing sets by 90 and 10 percent, respectively.  This results in 1961 training samples and 218 testing samples.  We experimented with other splits, notably 80-20 but used 90-10 in the end. 
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
@@ -110,6 +110,10 @@ Through literature review and additional review of the course materials, we lear
 The RERF model we created to project energy demands using independent variables related to urbanization (i.e. urban population, GDP, etc) had a relatively decent performance based on statistical values we calculated, notable R2 and root mean square error (RMSE).  Despite identifying a model with good performance, we realized that RERF wasn’t the best model for time series forecasting, especially given the datasets we initially selected which had way too few rows of data.  While the model was great for “in-sample” forecasting, it failed to accomplish our goal of “out-of-sample” forecasting. 
 
 Through discussions with several TAs and our course instructor, we learned of a more appropriate model for time series forecasting called ARIMA.  ARIMA is an acronym that stands for AutoRegressive Integrated Moving Average.  This type of modeling utilizes a relationship between a single observation in time and X number of lagged observations. This is an ideal model for “out-of-sample” forecasting. 
+
+Throuhg this process, we also learned that we needed to find a new dataset to use.  Our initial datasets from EIA and World Bank had too few rows.  Because of this, our project question had to change some.
+-	Initial project : Forecast China and India energy demand using urbanization data.
+-	New project : Forecast crude oil pricing using autoregression.  This is still related to urbanization and sustainability because crude oil prices vary based on a number of metrics, one of which is supply & demand.  We expect supply and demand to change as alternative fuel sources become more popular due to mandates and consumer preferences.  
 
 # Database
 
