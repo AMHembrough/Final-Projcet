@@ -111,7 +111,7 @@ The RERF model we created to project energy demands using independent variables 
 
 Through discussions with several TAs and our course instructor, we learned of a more appropriate model for time series forecasting called ARIMA.  ARIMA is an acronym that stands for AutoRegressive Integrated Moving Average.  This type of modeling utilizes a relationship between a single observation in time and X number of lagged observations. This is an ideal model for “out-of-sample” forecasting. 
 
-Throuhg this process, we also learned that we needed to find a new dataset to use.  Our initial datasets from EIA and World Bank had too few rows.  Because of this, our project question had to change some.
+Through the data & model exploration processes, we also learned that we needed to find a new dataset to use.  Our initial datasets from EIA and World Bank had too few rows.  Because of this, our project question had to change some.
 -	Initial project : Forecast China and India energy demand using urbanization data.
 -	New project : Forecast crude oil pricing using autoregression.  This is still related to urbanization and sustainability because crude oil prices vary based on a number of metrics, one of which is supply & demand.  We expect supply and demand to change as alternative fuel sources become more popular due to mandates and consumer preferences.  
 
