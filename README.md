@@ -16,7 +16,7 @@ Crude oil price which was obtained through Kaggle. The csv file contains crude o
 
 We also explored other variables with our ARIMA model such as sustainability index and pricing of various RIN d-codes, specifically D3, D4, D5 and D6.  The sustainability data was derived from Kaggle, while the RIN pricing data were derived from the Environmental Protection Agency, or EPA.  
 
-### Questions they hope to answer with the data 
+### Questions we hope to answer with the data 
 
 We want to learn how to conduct time series analysis with “out-of-sample” forecasting via machine learning, specifically ARIMA.  
 Time permitting, I am also interested in learning VAR over the next two weeks which would allow me to forecast several related variables in time.  
