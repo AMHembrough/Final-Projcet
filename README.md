@@ -18,17 +18,19 @@ We also explored other variables with our ARIMA model such as sustainability ind
 
 ### Questions we hope to answer with the data 
 
-We want to learn how to conduct time series analysis with “out-of-sample” forecasting via machine learning, specifically ARIMA.  
-Time permitting, I am also interested in learning VAR over the next two weeks which would allow me to forecast several related variables in time.  
+We want to learn how to conduct time series analysis with “out-of-sample” forecasting via supervised machine learning, specifically ARIMA.  We will project crude oil pricing.
+
+Time permitting, we are also interested in completing a VAR analysis.  
 
 ### Description of the data exploration phase of the project 
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Through the data exploration phase of the project, we learned that our datasets contained too few rows.  
-Within the last week, we began looking for a new dataset that would satisfying our row needs.  While we could not find the same metrics as our original dataset, we did find a related dataset containing daily crude oil pricing.  
+
+Within the last week, we began looking for a new dataset that would satisfying our database row needs.  While we could not find the same metrics as our original dataset, we did find a related dataset containing daily crude oil pricing.  
 
 ### Description of the analysis phase of the project 
 
-The analysis phase of the project helped us understand the strengths and weakness of several machine learning models.  During this process, we explored a number of supervised machine learning models including, regression analysis, random forests, regression-enhanced random forests, and autoregressive integrated moving average (ARIMA).  We hope to find time to explore vector autoregression (VAR).  
+The analysis phase of the project helped us understand the strengths and weakness of several machine learning models.  During this process, we explored a number of supervised machine learning models including regression analysis, random forests, regression-enhanced random forests (RERF), and autoregressive integrated moving average (ARIMA).  We hope to alsoe experiment with vector autoregression (VAR).  
 
 The model we are presenting as our final project is the ARIMA model.  We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  
 -	Mean squared error measures the difference between the predicted values and the actual values. The lesser the MSE, the closer the fit. In our model, the MSE is 1.77.
