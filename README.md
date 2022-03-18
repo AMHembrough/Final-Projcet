@@ -58,9 +58,10 @@ The crude oil price dataset was relatively clean and required little preprocessi
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
-### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+### Description of preliminary feature engineering and preliminary feature selection, including our decision-making process 
 
-The ARIMA model uses the dependency between an observation and the residual error from the moving average.  The variable we used was crude oil pricing.  
+The ARIMA model uses the dependency between an observation and the residual error from the moving average.  
+The variable we used was crude oil pricing.  
 
 ### Description of how data was split into training and testing sets 
 
