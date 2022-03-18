@@ -71,8 +71,6 @@ There was some communication on via Slack, both within the channel and DM’s wi
 
 # Machine Learning Model
 
-All code in the main branch is production ready.
-
 ### Description of preliminary data preprocessing 
 
 We practiced a lot of data preprocessing in the first two weeks of the final project.  While we will not use the dataframes we created during this process, it was a great way to refine and showcase some of the data cleaning processes we learned during our 24-week bootcamp.  Specifically, we did the following data processing in our initial jupyter notebook (which was submitted with the first deliverable).
