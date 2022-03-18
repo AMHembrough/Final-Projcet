@@ -139,8 +139,6 @@ We joined our crude oil pricing data table with our RIN D-type pricing table.  O
 
 # Dashboard
 
-A blueprint for the dashboard is created and includes all of the following:
-
 ### Storyboard on Google Slide(s) 
 
 These slides will need updated since we have changed the scope of our project to accommodate a model that is better suited for time series forecasting, specifically ARIMA modeling.  
@@ -149,7 +147,7 @@ https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkj
 
 ### Description of the tool(s) that will be used to create final dashboard 
 
-We plan to utilize Tableau to create our final Dashboard. Here are some mockups of our visualizations : 
+We plan to utilize Tableau to create our final Dashboard. Here is the initial blueprint for our data visualizations.  
 
 ![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20crude.PNG)
 ![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20RIN.PNG)
