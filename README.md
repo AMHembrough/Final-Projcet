@@ -44,7 +44,7 @@ The model we are presenting as our final project is the ARIMA model.  We used tw
 
 We practiced a lot of data preprocessing in the first two weeks of the final project using the EPA and World bank urbanization data.  While our end product will not utilize the dataframes we collected during this stage of data exploration, it was a great way to refine and showcase some of the data cleaning processes we learned during our 24-week bootcamp.  
 
-Specifically, we did the following data processing in our initial jupyter notebook (which was submitted with the first deliverable).
+Specifically, we did the following data processing in our initial Jupyter notebook (which was submitted with the first deliverable).
 -	Import data into a dataframe
 -	Clean the dataframe by dropping unnecessary columns
 -	Join dataframes together
@@ -52,9 +52,9 @@ Specifically, we did the following data processing in our initial jupyter notebo
 -	Edit the index
 -	Edit the header row
 -	Plot data to understand relationship between variables
--	….and so much more.  
+-	….and so much more
 
-The crude oil price dataset was relatively clean and required little preprocessing.  However, in addition to using the ARIMA model to project crude oil pricing, we also ran an ARIMA model on additional data such as RIN pricing and sustainability index.  These data, unlike the crude oil pricing data, were provided weekly or monthly.  To make these datasets align well in a pandas dataframe, we did an “interpolation” using pandas which allowed us to forward and backward fill the missing data points.   Below is a screenshot of that code. 
+The crude oil price dataset was relatively clean and required little preprocessing.  However, in addition to using the ARIMA model to project crude oil pricing, we also ran an ARIMA model on additional data such as RIN pricing and sustainability index.  These data, unlike the crude oil pricing data, were provided weekly or monthly.  To make these datasets align well in a single pandas dataframe, we did an “interpolation” using pandas which allowed us to forward and backward fill the missing data points.   Below is a screenshot of that code. 
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
