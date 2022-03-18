@@ -36,7 +36,7 @@ Mean squared error measures the difference between the predicted values and the 
 
 SMAPE was also calculated to determine model accuracy.  The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors.  Like MSE, the lower the value of SMAPE, the higher the model accuracy.  Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models.  In our model, the SMAPE is 2.77%. 
 
-![Model Accuracy]( _______________________________)
+![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Model%20Accuracy.PNG)
 
 # GitHub
 
@@ -87,7 +87,7 @@ We practiced a lot of data preprocessing in the first two weeks of the final pro
 
 The crude oil price dataset was relatively clean and required little preprocessing.  I experimented with ARIMA using other datasets that did not provide daily values, but instead offered weekly or monthly values.  To make these datasets align well in a pandas dataframe, I did an “interpolation” using pandas which allowed me to forward and backward fill the missing data points.   Below is a screenshot of that code. 
 
-![Extrapolation]( _______________________________)
+![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
 ## Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
 
@@ -97,7 +97,7 @@ ARIMA utilizes a single variable for time series forecasting.  The variable that
 
 We split our data into training and testing sets by 80 and 20 percent, respectively.  This results in 1743 training samples and 436 testing samples.  We experimented with other splits, notably 90-10 but found the model to be more accurate when using a n 80-20 split.   
 
-![Training & Testing Sets]( _______________________________)
+![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
 ## Explanation of model choice, including limitations and benefits
 
@@ -127,19 +127,19 @@ Postgres SQL, or Postgres, is the relational database system that we used for ou
 
 We imported two datasets into Postgres SQL using pdAdmin, one which stores daily pricing for crude oil, and a second which stores daily pricing for renewable fuel D-codes D3, D4, D5, and D6.  
 
-![Postgres Crude Table]( _______________________________)
+![Postgres Crude Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20table.PNG)
 
-![Postgres RIN Price Table]( _______________________________)
+![Postgres RIN Price Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20table2.PNG)
 
 ## Includes at least one join using the database language (not including any joins in Pandas) 
 
 We joined our crude oil pricing data table with our RIN D-type pricing table.  Our output was a table showing crude pricing, alongside prices for D3, D4, D5 and D6 RIN prices.  
 
-![Postgres Join]( _______________________________)
+![Postgres Join](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20join.PNG)
 
 ## Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD with relationships.
 
-![Entity Relationship Diagram]( _______________________________)
+![Entity Relationship Diagram](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Entity%20relationship%20diagram.PNG)
 
 # Dashboard
 
