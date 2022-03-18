@@ -69,8 +69,6 @@ There was some communication on via Slack, both within the channel and DM’s wi
 
 # Machine Learning Model
 
-All code in the main branch is production ready.
-
 ## Description of preliminary data preprocessing 
 
 We practiced a lot of data preprocessing in the first two weeks of the final project.  While we will not use the dataframes we created during this process, it was a great way to refine and showcase some of the data cleaning processes we learned during our 24-week bootcamp.  Specifically, we did the following data processing in our initial jupyter notebook (which was submitted with the first deliverable).
@@ -109,7 +107,9 @@ Through literature review and additional review of the course materials, we lear
 
 The RERF model we created to project energy demands using independent variables related to urbanization (i.e. urban population, GDP, etc) had a relatively decent performance based on statistical values we calculated, notable R2 and root mean square error (RMSE).  Despite identifying a model with good performance, we realized that RERF wasn’t the best model for time series forecasting, especially given the datasets we initially selected which had way too few rows of data.  While the model was great for “in-sample” forecasting, it failed to accomplish our goal of “out-of-sample” forecasting. 
 
-Through discussions with several TAs and our course instructor, we learned of a more appropriate model for time series forecasting called ARIMA.  ARIMA is an acronym that stands for AutoRegressive Integrated Moving Average.  This type of modeling utilizes a relationship between a single observation in time and X number of lagged observations. This is an ideal model for “out-of-sample” forecasting. 
+Through discussions with several TAs and our course instructor, we learned of a more appropriate model for time series forecasting called ARIMA.  ARIMA is an acronym that stands for Autoregressive Integrated Moving Average.  **A**uto**r**egression means that the model uses 
+
+This type of modeling utilizes a relationship between a single observation in time and X number of lagged observations. This is an ideal model for “out-of-sample” forecasting. 
 
 # Database
 
