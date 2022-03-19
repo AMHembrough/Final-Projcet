@@ -126,6 +126,10 @@ There was some communication on via Slack, both within the channel and DM’s wi
 
 Postgres SQL, or Postgres, is the relational database system that we used for our final project.  In conjunction with Postgres, we also used pgAdmin to write and execute queries, and to view our results.  
 
+### Database interfaces with the project in some format.
+
+Using pgAdmin, we will export our table join from Postgres SQL to a csv file that will then be used as the input for our machine learning model in Jupyter notebook. 
+
 ### Includes at least two tables (or collections, if using MongoDB) 
 
 We created two tables in Postgres SQL using pdAdmin.   The first table stores daily pricing for crude oil, and the seconds table stores daily pricing for renewable fuel D-codes D3, D4, D5, and D6.  
