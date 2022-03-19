@@ -154,13 +154,13 @@ Please see the entity relationship diagram for our SQL database below.
 
 ### Storyboard on Google Slide(s) 
 
-Here is a link to our storyboard on Google Slides: 
+Here is a link to our storyboard on Google Slides.  Please note, because we have changed our dataset and have explored several new models such as regression-enhanced random forests and ARIMA, we will need to make changes to the slides before our next deliverable. 
 
 https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
 
 ### Description of the tool(s) that will be used to create final dashboard 
 
-We are utilizing Tableau to create visuals for our final project.  Here are examples of some of the visuals we plan to deliver.  
+We are utilizing Tableau, a visual analytics platform, to create visuals for our final project.  We chose this platform because it feels more intuitive to use than the alternatives, such as Microsoft PowerBI and RStudio.  Also, we think it's fun to work in Tableau.  Here are examples of some of the visuals we plan to deliver.  
 
 ![Tableau RIN](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20RIN.PNG)
 
@@ -168,4 +168,4 @@ We are utilizing Tableau to create visuals for our final project.  Here are exam
 
 ### Description of interactive element(s)
 
-We plan to make visuals that you can interact with inside Tableau (ie tooltips, etc).  This will be a nice feature to offer to our end users.  
+We plan to make visuals that you can interact with inside Tableau.  Specifically, we'd like to include metrics in the tooltips of our graphs that enable users to see values when the mouse hovers over a data point.  In addition to this functionality, we will also publish the results of our analysis to Tableau Public, enabling an interactive link to be shared with interested parties.   
