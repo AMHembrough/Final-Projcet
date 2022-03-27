@@ -105,8 +105,9 @@ Please refer to our Jupyter notebook which has been uploaded to Github.
 
 ### Description of the communication protocols 
 
-We did not meet outside of class during the week of 7-Mar.  There are plans for the group to meet this Saturday, 19-March.  
-
+We did not meet outside of class during the week of 7-Mar.  
+The group met 19-March. 
+During the past 7 days, we met during scheduled classtime, and worked independently outside of these windows.  
 There was some communication on via Slack, both within the channel and DM’s within group.  
 
 ### Outline of the project 
@@ -128,7 +129,9 @@ Postgres SQL, or Postgres, is the relational database system that we used for ou
 
 ### Database interfaces with the project in some format.
 
-Using pgAdmin, we will export our table join from Postgres SQL to a csv file that will then be used as the input for our machine learning model in Jupyter notebook. 
+We wrote code to export the results of our ARIMA model into Postgres SQL.  
+
+![Postgres RIN Price Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/PostgresExport.PNG)
 
 ### Includes at least two tables (or collections, if using MongoDB) 
 
