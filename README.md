@@ -64,7 +64,7 @@ The crude oil price dataset was relatively clean and required little preprocessi
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
-### Description ofmfeature engineering and preliminary feature selection, including our decision-making process 
+### Description of feature engineering and preliminary feature selection, including our decision-making process 
 
 The ARIMA model uses the dependency between an observation and the residual error from the moving average.  
 We ran this model using a variety of variables including the Dow Jones Sustainability Indices, crude oil pricing, and various RIN d-type pricing.  In the end, the variable that we chose to use was the Dow Jones Sustainability Indices (DJSI-US). 
@@ -75,7 +75,8 @@ We split our data into training and testing sets by 90 and 10 percent, respectiv
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
-### Explanation of model choice, including limitations and benefits.  Explanation of changes in model choice week on week.  
+### Explanation of model choice, including limitations and benefits.  
+### Explanation of changes in model choice week on week.  
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Originally, we thought to explore the data using linear regression or multivariate regression, but decided to dive deeper.  
 
@@ -95,6 +96,13 @@ When we fit the ARIMA model to our crude oil dataset, we learned that our data w
 ![ARIMA fit]( https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/ARIMA%20fit.PNG)
 
 One limitation of ARIMA modeling, which we’ve mentioned already, is that it only utilizes a single variable.  For this reason, it’s worth noting that the VAR model doesn’t have this limitation, which is why we are eager to try this model out, too! 
+
+### Description of how we have trained the model thus far, and any additional training that will take place. 
+
+We used auto ARIMA to select the ARIMA model with the best fit.  
+Once the model was fit, we trained our dataset using a 90/10 split of our data after testing several different ratios.  
+We repeated this process with each of our variables, including DJSI, crude price, and the various RIN d-type prices.  
+No additional training will take plae.  
 
 ### Description of Accuracy Score
 
@@ -127,6 +135,12 @@ Please refer to our Jupyter notebook which has been uploaded to Github.
 -	Run model for “out-of sample” forecasting using Jupyter notebooks & python
 -	Build dashboard using Tableau
 -	Finalize presentation using Google slides
+
+### Link to Google Slides draft presentation
+
+Here is a working copy of our Google Slides. 
+
+https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
 
 # Database
 
