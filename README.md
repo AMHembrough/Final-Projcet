@@ -81,8 +81,7 @@ We split our data into training and testing sets by 90 and 10 percent, respectiv
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
-### Explanation of model choice, including limitations and benefits.  
-### Explanation of changes in model choice week on week.  
+### Explanation of model choice, including limitations and benefits, and explanation of changes in model choice week on week.  
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Originally, we thought to explore the data using linear regression or multivariate regression, but decided to dive deeper.  
 
@@ -182,15 +181,9 @@ Please see the entity relationship diagram for our SQL database below.
 
 # Dashboard
 
-### Storyboard on Google Slide(s) 
+### Images from initial analysis & data from the machine learning model. 
 
-Here is a link to our storyboard on Google Slides.  Please note, because we have changed our dataset and have explored several new models such as regression-enhanced random forests and ARIMA, we will need to make changes to the slides before the final presentation.  Here is a working copy of our Google Slides. 
-
-https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
-
-### Description of the tool(s) that will be used to create final dashboard 
-
-We are utilizing Tableau, a visual analytics platform, to create visuals for our final project.  We chose this platform because it feels more intuitive to use than the alternatives, such as Microsoft PowerBI and RStudio.  Also, we think it's fun to work in Tableau.  Here are examples of some of the visuals we plan to deliver.  
+We are utilizing Tableau, a visual analytics platform, to create visuals for our final project.  We chose this platform because it feels more intuitive to use than the alternatives, such as Microsoft PowerBI and RStudio.  Also, we think it's fun to work in Tableau.  Here are examples of some of the visuals we will deliver in our final dashboard 
 
 ![Tableau RIN](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Tableau%20RIN.PNG)
 
