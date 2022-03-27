@@ -127,7 +127,7 @@ We  utilized 3 Jupyter notebooks during the exploratory portion of the project :
 - A second Jupyter notebook was used when building the machine learning portion of the project, specifically regression-enhanced random forest.  Because we chose to not use this model, this Jupyter notebook was not added to the main branch of the GitHub repository.  
 - A third Jupyter notebook was used to create our ARIMA model which is the model we will be submitting for our final deliverable.  The code for this model has been uploaded to the main branch of the GitHub repository.  
 
-### Some code necessary to complete the machine learning portion of the project 
+### All code necessary to complete the machine learning portion of the project 
 
 Please refer to our Jupyter notebook which has been uploaded to Github.
 
