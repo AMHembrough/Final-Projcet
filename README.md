@@ -18,7 +18,7 @@ We also explored other variables with our ARIMA model such as sustainability ind
 
 ### Questions we hope to answer with the data 
 
-We want to learn how to conduct time series analysis with “out-of-sample” forecasting via supervised machine learning, specifically ARIMA.  We will project crude oil pricing.
+We want to learn how to conduct time series analysis with “out-of-sample” forecasting via supervised machine learning, specifically ARIMA.  We will project crude oil pricing, RIN d-type pricing, and the DJSI-US pricing. 
 
 Time permitting, we are also interested in completing a VAR analysis.  
 
@@ -26,7 +26,7 @@ Time permitting, we are also interested in completing a VAR analysis.
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Through the data exploration phase of the project, we learned that our datasets contained too few rows.  
 
-Within the last week, we began looking for a new dataset that would satisfying our database row needs.  While we could not find the same metrics as our original dataset, we did find a related dataset containing daily crude oil pricing.  
+Over the past 2 weeks, we began looking for a new dataset that would satisfying our database row needs.  While we could not find the same metrics as our original dataset, we did find related datasets including crude oil pricing, RIN d-type pricing, and DJSI-US pricing.  
 
 ### Description of the analysis phase of the project 
 
@@ -97,7 +97,7 @@ Through discussions with several TAs and our course instructor, we learned of a 
 
 There are three parameters of ARIMA, specifically (p,d,q).  P refers to the lag order, or the number of lag observations included in the model. D refers to the degree of differencing, or the number of times the raw observations are differenced.   Q refers to the order of the moving average, or the size of the moving average window.  Each of these parameters are substituted with integers to indicate the type of ARMMA model being used.  If a zero is substituted for a parameter, that element will not be used in the ARIMA model.  
 
-When we fit the ARIMA model to our crude oil dataset, we learned that our data was best fit to ARIMA (5,1,1) which had the smallest AIC value compared to other fits.  
+When we fit the ARIMA model to our DJSI-US dataset, we learned that our data was best fit to ARIMA (5,1,1) which had the smallest AIC value compared to other fits.  
 ![ARIMA fit]( https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/ARIMA%20fit.PNG)
 
 One limitation of ARIMA modeling, which we’ve mentioned already, is that it only utilizes a single variable.  For this reason, it’s worth noting that the VAR model doesn’t have this limitation, which is why we are eager to try this model out, too! 
@@ -178,6 +178,8 @@ We joined our crude oil pricing data table with our RIN D-type pricing table.  O
 Please see the entity relationship diagram for our SQL database below.  
 
 ![Entity Relationship Diagram](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Entity%20relationship%20diagram.PNG)
+
+We also connected our ARIMA model to Postgres at the ending by exporting the results our our model into Postgres SQL.  
 
 # Dashboard
 
