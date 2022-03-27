@@ -32,15 +32,21 @@ Within the last week, we began looking for a new dataset that would satisfying o
 
 The analysis phase of the project helped us understand the strengths and weakness of several machine learning models.  During this process, we explored a number of supervised machine learning models including regression analysis, random forests, regression-enhanced random forests (RERF), and autoregressive integrated moving average (ARIMA).  We hope to alsoe experiment with vector autoregression (VAR).  
 
-The model we are presenting as our final project is the ARIMA model.  We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  
--	Mean squared error measures the difference between the predicted values and the actual values. The lesser the MSE, the closer the fit. In our model, the MSE is 3.08.
--	SMAPE was also calculated to determine model accuracy. The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors. Like MSE, the lower the value of SMAPE, the higher the model accuracy. Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models. In our model, the SMAPE is 0.59%. It will be fun to compare SMAPE between this ARIMA model, and a later VAR model.
+The model we are presenting as our final project is the ARIMA model.  We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  Accuracy results are outlined in the Machine Learning Model section.  
 
-![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Accuracy.PNG)
+### Technologies, languages, tools and algorithms used throughout the project : 
+
+Technologies : Postgres SQL, PGAdmin, Anaconda Prompt, Jupyter notebook, GitHub, Tableau
+
+Languages : python
+
+Tools : Stack Overflow, Kaggle, office hours, TA / instructor guidance, etc. 
+
+Algorithms : mean square error, SMAPE
 
 # Machine Learning Model
 
-### Description of preliminary data preprocessing 
+### Description of data preprocessing 
 
 We practiced a lot of data preprocessing in the first two weeks of the final project using the EPA and World bank urbanization data.  While our end product will not utilize the dataframes we collected during this stage of data exploration, it was a great way to refine and showcase some of the data cleaning processes we learned during our 24-week bootcamp.  
 
@@ -58,7 +64,7 @@ The crude oil price dataset was relatively clean and required little preprocessi
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
-### Description of preliminary feature engineering and preliminary feature selection, including our decision-making process 
+### Description ofmfeature engineering and preliminary feature selection, including our decision-making process 
 
 The ARIMA model uses the dependency between an observation and the residual error from the moving average.  
 We ran this model using a variety of variables including the Dow Jones Sustainability Indices, crude oil pricing, and various RIN d-type pricing.  In the end, the variable that we chose to use was the Dow Jones Sustainability Indices (DJSI-US). 
@@ -69,7 +75,7 @@ We split our data into training and testing sets by 90 and 10 percent, respectiv
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
-### Explanation of model choice, including limitations and benefits
+### Explanation of model choice, including limitations and benefits.  Explanation of changes in model choice week on week.  
 
 Originally, we had selected several databases from World Bank and EIA which we believed would be useful in projecting China and India energy demand over time.  Originally, we thought to explore the data using linear regression or multivariate regression, but decided to dive deeper.  
 
@@ -90,6 +96,14 @@ When we fit the ARIMA model to our crude oil dataset, we learned that our data w
 
 One limitation of ARIMA modeling, which we’ve mentioned already, is that it only utilizes a single variable.  For this reason, it’s worth noting that the VAR model doesn’t have this limitation, which is why we are eager to try this model out, too! 
 
+### Description of Accuracy Score
+
+The model we are presenting as our final project is the ARIMA model.  We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  
+-	Mean squared error measures the difference between the predicted values and the actual values. The lesser the MSE, the closer the fit. In our model, the MSE is 3.08.
+-	SMAPE was also calculated to determine model accuracy. The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors. Like MSE, the lower the value of SMAPE, the higher the model accuracy. Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models. In our model, the SMAPE is 0.59%. It will be fun to compare SMAPE between this ARIMA model, and a later VAR model.
+
+![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Accuracy.PNG)
+
 # GitHub
 
 ### All code necessary to perform exploratory analysis 
@@ -102,13 +116,6 @@ We  utilized 3 Jupyter notebooks during the exploratory portion of the project :
 ### Some code necessary to complete the machine learning portion of the project 
 
 Please refer to our Jupyter notebook which has been uploaded to Github.
-
-### Description of the communication protocols 
-
-We did not meet outside of class during the week of 7-Mar.  
-The group met 19-March. 
-During the past 7 days, we met during scheduled classtime, and worked independently outside of these windows.  
-There was some communication on via Slack, both within the channel and DM’s within group.  
 
 ### Outline of the project 
 -	Identify project idea
@@ -157,7 +164,7 @@ Please see the entity relationship diagram for our SQL database below.
 
 ### Storyboard on Google Slide(s) 
 
-Here is a link to our storyboard on Google Slides.  Please note, because we have changed our dataset and have explored several new models such as regression-enhanced random forests and ARIMA, we will need to make changes to the slides before our next deliverable. 
+Here is a link to our storyboard on Google Slides.  Please note, because we have changed our dataset and have explored several new models such as regression-enhanced random forests and ARIMA, we will need to make changes to the slides before the final presentation.  Here is a working copy of our Google Slides. 
 
 https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
 
@@ -171,4 +178,7 @@ We are utilizing Tableau, a visual analytics platform, to create visuals for our
 
 ### Description of interactive element(s)
 
-We plan to make visuals that you can interact with inside Tableau.  Specifically, we'd like to include metrics in the tooltips of our graphs that enable users to see values when the mouse hovers over a data point.  In addition to this functionality, we will also publish the results of our analysis to Tableau Public, enabling an interactive link to be shared with interested parties.   
+We plan to make visuals that you can interact with inside Tableau.  
+-     Specifically, we'd like to include metrics in the tooltips of our graphs that enable users to see values when the mouse hovers over a data point.  
+-     In addition to this functionality, we will also publish the results of our analysis to Tableau Public, enabling an interactive link to be shared with interested parties.  
+-     Lastly, we'd like to include a method that allows users to highlight certain dates in time within the charts. 
