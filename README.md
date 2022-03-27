@@ -4,7 +4,7 @@
 
 Increased urbanization results in increased energy use.  Crude oil has historically been used for energy production, though renewable energy alternatives also exist.  International, federal, and state-wide mandates and regulations, such as the Renewable Fuel Standards (RFS) and the Low Carbon Fuel Standards (LCFS) require renewable fuel production volume obligations to be met annually.  This type of govt regulation is one of many factors that could impact crude oil pricing, especially in the next 5-10 years as renewable diesel production, electric vehicles, and other alternative energy sources become more popular here in the United States and abroad.  Expensive and/or volatile crude oil pricing (due to alternative fuel mandates, political turmoil like that in Russia & Ukraine today, etc.) could push consumers to utilize alternative fuels more quickly.  Alternative fuels, in turn, could have a less harmful, negative anthropological effects on our environment.   
 
-The outcome of this project is to forecast crude oil pricing using a time series forecasting machine learning model called ARIMA. 
+The outcome of this project is to forecast a variable using a time series forecasting machine learning model called ARIMA.  We will test our ARIMA model with different variables, including the Dow Jones Sustainability Indices (DJSI), crude oil pricing, and the pricing of various RIN D-types, such as D3, D4, D5, and D6. 
 
 ### Reason why we selected this topic 
 
@@ -33,8 +33,8 @@ Within the last week, we began looking for a new dataset that would satisfying o
 The analysis phase of the project helped us understand the strengths and weakness of several machine learning models.  During this process, we explored a number of supervised machine learning models including regression analysis, random forests, regression-enhanced random forests (RERF), and autoregressive integrated moving average (ARIMA).  We hope to alsoe experiment with vector autoregression (VAR).  
 
 The model we are presenting as our final project is the ARIMA model.  We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  
--	Mean squared error measures the difference between the predicted values and the actual values. The lesser the MSE, the closer the fit. In our model, the MSE is 1.77.
--	SMAPE was also calculated to determine model accuracy. The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors. Like MSE, the lower the value of SMAPE, the higher the model accuracy. Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models. In our model, the SMAPE is 1.50%. It will be fun to compare SMAPE between this ARIMA model, and a later VAR model.
+-	Mean squared error measures the difference between the predicted values and the actual values. The lesser the MSE, the closer the fit. In our model, the MSE is 3.08.
+-	SMAPE was also calculated to determine model accuracy. The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors. Like MSE, the lower the value of SMAPE, the higher the model accuracy. Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models. In our model, the SMAPE is 0.59%. It will be fun to compare SMAPE between this ARIMA model, and a later VAR model.
 
 ![Model Accuracy](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Accuracy.PNG)
 
@@ -61,11 +61,11 @@ The crude oil price dataset was relatively clean and required little preprocessi
 ### Description of preliminary feature engineering and preliminary feature selection, including our decision-making process 
 
 The ARIMA model uses the dependency between an observation and the residual error from the moving average.  
-The variable we used was crude oil pricing.  
+We ran this model using a variety of variables including the Dow Jones Sustainability Indices, crude oil pricing, and various RIN d-type pricing.  In the end, the variable that we chose to use was the Dow Jones Sustainability Indices (DJSI-US). 
 
 ### Description of how data was split into training and testing sets 
 
-We split our data into training and testing sets by 90 and 10 percent, respectively.  This results in 1961 training samples and 218 testing samples.  We experimented with other splits, notably 80-20 but used 90-10 in the end.  
+We split our data into training and testing sets by 90 and 10 percent, respectively.  This results in 1977 training samples and 220 testing samples.  We experimented with other splits, notably 80-20 but used 90-10 in the end.  
 
 ![Training & Testing Sets](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Training.PNG)
 
@@ -85,7 +85,7 @@ Through discussions with several TAs and our course instructor, we learned of a 
 
 There are three parameters of ARIMA, specifically (p,d,q).  P refers to the lag order, or the number of lag observations included in the model. D refers to the degree of differencing, or the number of times the raw observations are differenced.   Q refers to the order of the moving average, or the size of the moving average window.  Each of these parameters are substituted with integers to indicate the type of ARMMA model being used.  If a zero is substituted for a parameter, that element will not be used in the ARIMA model.  
 
-When we fit the ARIMA model to our crude oil dataset, we learned that our data was best fit to ARIMA (0,1,0) which had the smallest AIC value compared to other fits.  
+When we fit the ARIMA model to our crude oil dataset, we learned that our data was best fit to ARIMA (5,1,1) which had the smallest AIC value compared to other fits.  
 ![ARIMA fit]( https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/ARIMA%20fit.PNG)
 
 One limitation of ARIMA modeling, which we’ve mentioned already, is that it only utilizes a single variable.  For this reason, it’s worth noting that the VAR model doesn’t have this limitation, which is why we are eager to try this model out, too! 
