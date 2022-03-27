@@ -44,6 +44,12 @@ Tools : Stack Overflow, Kaggle, office hours, TA / instructor guidance, etc.
 
 Algorithms : mean square error, SMAPE
 
+### Link to Google Slides draft presentation
+
+Here is a working copy of our Google Slides. 
+
+https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
+
 # Machine Learning Model
 
 ### Description of data preprocessing 
@@ -135,12 +141,6 @@ Please refer to our Jupyter notebook which has been uploaded to Github.
 -	Run model for “out-of sample” forecasting using Jupyter notebooks & python
 -	Build dashboard using Tableau
 -	Finalize presentation using Google slides
-
-### Link to Google Slides draft presentation
-
-Here is a working copy of our Google Slides. 
-
-https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
 
 # Database
 
