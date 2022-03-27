@@ -142,6 +142,12 @@ Please refer to our Jupyter notebook which has been uploaded to Github.
 -	Build dashboard using Tableau
 -	Finalize presentation using Google slides
 
+### Link to Google Slides draft presentation
+
+Here is a working copy of our Google Slides. 
+
+https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
+
 # Database
 
 ### Database stores static data for use during the project 
