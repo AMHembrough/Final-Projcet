@@ -70,7 +70,7 @@ The crude oil price dataset was relatively clean and required little preprocessi
 
 ![Extrapolation](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Extrapolation.PNG)
 
-### Description of feature engineering and preliminary feature selection, including our decision-making process 
+### Description of feature engineering and feature selection, including our decision-making process 
 
 The ARIMA model uses the dependency between an observation and the residual error from the moving average.  
 We ran this model using a variety of variables including the Dow Jones Sustainability Indices, crude oil pricing, and various RIN d-type pricing.  In the end, the variable that we chose to use was the Dow Jones Sustainability Indices (DJSI-US). 
@@ -102,16 +102,15 @@ When we fit the ARIMA model to our DJSI-US dataset, we learned that our data was
 
 One limitation of ARIMA modeling, which we’ve mentioned already, is that it only utilizes a single variable.  For this reason, it’s worth noting that the VAR model doesn’t have this limitation, which is why we are eager to try this model out, too! 
 
-### Description of how we have trained the model thus far, and any additional training that will take place. 
+### Description of how we have trained the model
 
 We used auto ARIMA to select the ARIMA model with the best fit.  
 Once the model was fit, we trained our dataset using a 90/10 split of our data after testing several different ratios.  
-We repeated this process with each of our variables, including DJSI, crude price, and the various RIN d-type prices.  
-No additional training will take plae.  
+We repeated this process with each of our variables, including DJSI, crude price, and the various RIN d-type prices.   
 
-### Description of Accuracy Score
+### Description of model's confusion matrix, including final accuracy score. 
 
-The model we are presenting as our final project is the ARIMA model.  We used two metrics to assess the quality of the ARIMA model, specifically MSE and SMAPE.  
+We did not create a confusion matrix for this project because ARIMA is a time-series forecasting tool that forecasts a continuous variable (versus a classification model).  We did, however, test the accuracy of our model using two metrics, specifically MSE and SMAPE.  
 -	Mean squared error measures the difference between the predicted values and the actual values. The lesser the MSE, the closer the fit. In our model, the MSE is 3.08.
 -	SMAPE was also calculated to determine model accuracy. The Symmetric Mean Absolute Percentage Error, or SMAPE, is a measurement based on percentage errors. Like MSE, the lower the value of SMAPE, the higher the model accuracy. Because SMAPE is percentage based, it’s scale-dependent and can be used compare across datasets or models. In our model, the SMAPE is 0.59%. It will be fun to compare SMAPE between this ARIMA model, and a later VAR model.
 
