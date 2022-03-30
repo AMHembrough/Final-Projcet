@@ -130,6 +130,10 @@ We  utilized 3 Jupyter notebooks during the exploratory portion of the project :
 
 Please refer to our Jupyter notebook which has been uploaded to Github.
 
+### Images that have been created
+
+All images for this project can be found in the Resources folder of Github.  
+
 ### Outline of the project 
 -	Identify project idea
 -	Find dataset using Kaggle
@@ -145,7 +149,11 @@ Please refer to our Jupyter notebook which has been uploaded to Github.
 
 Here is a working copy of our Google Slides. 
 
-https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
+https://docs.google.com/presentation/d/1EO2EdCrp69qmJVaqxIgXZg2SMTPYQMDGgBqxcXjjMMs/edit#slide=id.g11f9b07a84d_0_30
+
+### Link to Tableau Public dashboard
+
+
 
 # Database
 
