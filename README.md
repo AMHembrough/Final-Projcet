@@ -152,7 +152,7 @@ https://docs.google.com/presentation/d/1EO2EdCrp69qmJVaqxIgXZg2SMTPYQMDGgBqxcXjj
 
 ### Link to Tableau Public dashboard
 
-https://public.tableau.com/app/profile/john6257/viz/SustainabilityPresentation_16481692913910/Dashboard1
+https://public.tableau.com/app/profile/ashley.m.hembrough/viz/Sustainability_16487340963630/SustainabilityForecastingDowJonesSustainabilityIndexDJSI-US?publish=yes
 
 # Database
 
