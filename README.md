@@ -48,7 +48,7 @@ Algorithms : mean square error, SMAPE
 
 Here is a working copy of our Google Slides. 
 
-https://docs.google.com/presentation/d/1hcUUxudJCIKIiH2meyf5kHqM0MWkAN7eNCEKxKkjidY/edit?usp=sharing 
+https://docs.google.com/presentation/d/1EO2EdCrp69qmJVaqxIgXZg2SMTPYQMDGgBqxcXjjMMs/edit#slide=id.g11f9b07a84d_0_30
 
 # Machine Learning Model
 
