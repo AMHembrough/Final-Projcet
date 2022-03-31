@@ -173,7 +173,7 @@ We created two tables in Postgres SQL using pdAdmin.   The first table stores da
 ![Postgres Crude Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20table.PNG)
 
 ![Postgres RIN Price Table](https://github.com/AMHembrough/Final-Projcet/blob/main/Resources/Postgres%20table2.PNG)
-
+ 
 ### Includes at least one join using the database language (not including any joins in Pandas) 
 
 We joined our crude oil pricing data table with our RIN D-type pricing table.  Our output was a table showing crude pricing, alongside prices for D3, D4, D5 and D6 RIN prices.  
