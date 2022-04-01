@@ -201,6 +201,5 @@ We are utilizing Tableau, a visual analytics platform, to create visuals for our
 ### Description of interactive element(s)
 
 We plan to make visuals that you can interact with inside Tableau.  
-- Specifically, we'd like to include metrics in the tooltips of our graphs that enable users to see values when the mouse hovers over a data point.  
-- In addition to this functionality, we will also publish the results of our analysis to Tableau Public, enabling an interactive link to be shared with interested parties.  
-- Lastly, we'd like to include a method that allows users to highlight certain dates in time within the charts. 
+- Specifically, we included metrics in the tooltips of our graphs that enable users to see values when the mouse hovers over a data point.  
+- In addition to this functionality, we also published the results of our analysis to Tableau Public, enabling an interactive link to be shared with interested parties.  
